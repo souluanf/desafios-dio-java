@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class EntradaESaidaCpf {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] cpf = sc.nextLine().split("\\.|-");
+        for (String s : cpf) {
+            System.out.printf("%s\n", s);
+        }
+        sc.close();
+    }
+}
